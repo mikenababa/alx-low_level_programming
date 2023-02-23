@@ -9,6 +9,7 @@
 
 int main(void)
 {
+
 	int a, b;
 
 	for (a = 1; a < 1024; a++)
@@ -17,5 +18,5 @@ int main(void)
 			b += a;
 	}
 	printf("%d\n", b);
-        return (0);
-}}
+	return (0);
+}
