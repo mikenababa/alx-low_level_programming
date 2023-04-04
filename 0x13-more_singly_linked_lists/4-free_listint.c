@@ -12,8 +12,8 @@ void free_listint(listint_t *head)
 
 	while (head)
 	{
-		temp = head; /* store current node in temp */
+		tmp = head; /* store current node in temp */
 		head = head->next; /* update header pointer to the next node */
-		free(temp); /* free memory alloted for the current node */
+		free(tmp); /* free memory alloted for the current node */
 	}
 }
