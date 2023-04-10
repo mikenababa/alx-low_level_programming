@@ -26,7 +26,7 @@ else if (b[i] != '0')
 {
 return (0);
 }
-bit_value <<= 1;
+bit <<= 1;
 }
 return (decimal_number);
 }
