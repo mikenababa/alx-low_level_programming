@@ -8,21 +8,21 @@
 * Return: the converted number, or 0 if there is one or more chars
 * in the string b that is not 0 or 1, or b is NULL
 */
-unsigned int binary_to_uint(const char *binary_string)
+unsigned int binary_to_uint(const char *b)
 {
 unsigned int decimal_number = 0, bit_value = 1;
 int i;
-if (binary_string == NULL)
+if (b == NULL)
 {
 return (0);
 }
-for (i = strlen(binary_string) - 1; i >= 0; i--)
+for (i = strlen(b) - 1; i >= 0; i--)
 {
-if (binary_string[i] == '1')
+if (b[i] == '1')
 {
 decimal_number += bit_value;
 }
-else if (binary_string[i] != '0')
+else if (b[i] != '0')
 {
 return (0);
 }
